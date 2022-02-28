@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(51, 70, 182);
+            color: white;
+            font: normal 1.4em Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Iniciando estudos com DOM
+    </h1>
+    <p>
+        Aqui vai o resultado
+    </p>
+    <p>
+        Aprendendo a usar o <strong>DOM</strong> em JavaScript.
+    </p>
+    <div id = "msg">
+        Clique em mim!
+    </div>
+    <div name = "mensagem">
+        Olha aqui!
+    </div>
+    <div class = "m">
+        Olá!
+    </div>
+    
+    <div id = "m">
+        Olá!
+    </div>
+
+    <script>
+        var corpo = window.document.body;
+        var p1 = window.document.getElementsByTagName('p')[1];
+        corpo.style.background = 'black';
+        p1.style.color = 'yellow';
+        window.document.write(`Está escrito assim: ${p1.innerHTML}`);
+        var d = window.document.getElementById('msg');
+        d.style.background = 'green';
+        //d.innerText ='Estou aguardando...'
+        //window.document.getElementById('msg').innerText='Olá';
+        var k = window.document.getElementsByName('mensagem')[0];
+        k.innerText = 'Bem Vindo!';
+        var f = window.document.getElementsByClassName('m')[0];
+        f.innerText = 'Estou estudando JavaScript!';
+        var s = window.document.querySelector('div#m')
+        s.style.color = 'lightblue';
+    </script>
+</body>
+</html>
