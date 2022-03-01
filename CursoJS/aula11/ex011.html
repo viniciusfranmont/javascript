@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font: normal 1.5em Arial, Helvetica, sans-serif;
+            line-height: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Avaliando Nacionalidades</h1>
+    <p>Digite o seu nome e a sua nacionalidade, nos devidos campos abaixo:</p>
+    <label for="name">Nome:</label>
+    <input type="text" name="txtnome" id="txtnome"><br>
+    <label for="nacionalidade">Nacionalidade:</label>
+    <input type="text" name="txtnac" id="txtnac"><br>
+    <input type="button" value="Confirma" onclick="pais()">
+    <div id="res">
+
+    </div>
+    <script>
+        function pais() {
+            var txtnom = window.document.querySelector('input#txtnome');
+            var txtnac = window.document.querySelector('input#txtnac');
+            var res = window.document.querySelector('div#res');
+            nome = String(txtnom.value);
+            nac = String(txtnac.value);
+            res.innerHTML = `<p>Olá, <strong>${nome}!</strong></p>`;
+            if (nac.toUpperCase() == 'BRASILEIRA') {
+                res.innerHTML += `<p>Você é <strong>Brasileiro(a)!</strong></p>`
+            } else{
+                res.innerHTML += `<p>Você é <strong>Estrangeiro(a)!</strong></p>`;
+            }
+        }
+    </script>
+</body>
+</html>
