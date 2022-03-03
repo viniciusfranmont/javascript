@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(53, 117, 255);
+}
+
+header h1 {
+    font: normal 3em Verdana, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+main {
+    background-color:white;
+    max-width: 500px;
+    padding: 12px;
+    margin: auto;
+    font: normal 1.2em Verdana, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 3em;
+    
+}
+
+footer p{
+    font: normal 1.4em Verdana, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
