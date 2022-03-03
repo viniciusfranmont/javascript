@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body{
+    background-color: blue;
+}
+
+header h1{
+    font: normal 3em Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 1px 1px black;
+}
+
+main section{
+    background-color:white;
+    max-width: 500px;
+    padding: 12px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.315);
+}
+
+div#msg {
+    text-align: center;
+    font : normal 22px Arial, Helvetica, sans-serif;
+    padding-bottom : 10px;
+}
+
+div#img{
+    text-align: center;
+}
+
+footer p{
+    text-align: center;
+    font: normal 1.3em Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 2px 1px 1px black;
+}
