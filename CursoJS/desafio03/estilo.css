@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(50, 115, 255);
+}
+
+header h1{
+    font: normal 3em Helvetica, Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+main{
+    background-color: white;
+    max-width: 500px;
+    padding: 12px;
+    margin: auto;
+    line-height: 2.4em;
+}
+
+div#res {
+    padding-top: 12px;
+    font: bold 1.1em Helvetica, Arial, sans-serif; 
+}
+
+footer p{
+    text-align: center;
+    font: normal 1.3em Helvetica, Arial, sans-serif;
+    color: white;
+}
