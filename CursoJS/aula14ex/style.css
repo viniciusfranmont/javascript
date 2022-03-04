@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body{
+    background: rgb(70, 142, 236);
+    font: normal 15px Arial, Helvetica, sans-serif;
+}
+
+header h1{
+    color: white;
+    font: bold 3em Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.384);
+    line-height: 2.5em;
+}
+
+input#txtPasso {
+    margin-bottom: 20px;
+}
+
+footer {
+    color: white;
+    font: italic normal 1.1em Arial, Helvetica, sans-serif;
+    text-align: center;
+}
