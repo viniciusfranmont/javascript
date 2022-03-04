@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(8, 96, 211);
+}
+
+header h1{
+    font: normal 3em Verdana, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+
+main {
+    background-color: white;
+    padding: 12px;
+    padding-right: 5px;
+    margin: auto;
+    max-width: 500px;
+    line-height: 3em;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.342);
+    text-align: center;
+}
+
+div#res {
+    text-align: center;
+}
+
+select{
+    padding: 5px;
+}
+footer p {
+    font: normal 1.2em Verdana, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
