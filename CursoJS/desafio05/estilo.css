@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(45, 133, 248);
+}
+
+header h1 {
+    font: normal 3em Helvetica, Verdana, Arial, sans-serif;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 1px black;
+}
+
+main {
+    background-color: white;
+    max-width: 500px;
+    padding: 12px;
+    margin: auto;
+    line-height: 2em;
+}
+
+div#primeira, div#segunda, div#terceira, div#resultado{
+    text-align: center;
+
+}
+
+select {
+    width: 150px;
+}
+
+footer {
+    font: normal 1.3em Helvetica, Verdana, Arial, sans-serif;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 1px black;
+}
