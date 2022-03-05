@@ -9,32 +9,40 @@ function contar() {
     } else{
         let inicio = Number(txtIni.value);
         let fim = Number(txtFim.value);
-        let passo = Number(txtPasso.value);     
+        let passo = Number(txtPasso.value);
+        res.innerHTML = 'Contando: <br>'    
         // Se a contagem for estacionária
         if(inicio == fim) {
             res.innerHTML = `<strong>Progressão estacionária: permanecerá no valor ${inicio}.</strong>`;
-        } // Se a contagem for crescente
-        else if (inicio < fim) {
-            if (passo === 0){
-                window.alert('Passo Inválido. Considerando Passo = 1:');
-                passo = 1;
+        } else if (inicio < fim) { // Se a contagem for crescente
+            if (passo <= 0) {
+                if (passo === 0){
+                    window.alert('Passo Inválido. Considerando Passo = 1:');
+                    passo = 1;
+                } else{
+                    passo = Math.abs(passo);
+                }
+                
             }
-            while (inicio <= fim){
+            while (inicio <= fim) {
                 res.innerHTML += `${inicio} \u{1F449}`
                 inicio += passo;
             }
             res.innerHTML += '\u{1F3C1}';
-        } // Se a contagem for decrescente
-        else {
-            if (passo === 0){
-                window.alert('Passo Inválido. Considerando Passo = -1:');
-                passo = 1;
+        } else { // Se a contagem for regressiva
+            if (passo <= 0){
+                if (passo === 0){
+                    window.alert('Passo Inválido. Considerando Passo = -1:');
+                    passo = 1;
+                } else{
+                    passo = Math.abs(passo);
+                }    
             }
             while (inicio >= fim){
-                res.innerHTML += `${inicio} \u{1F449}`
+                res.innerHTML += ` ${inicio} \u{1F449}`
                 inicio -= passo;
             }
-            res.innerHTML += '\u{1F3C1}';
+            res.innerHTML += ' \u{1F3C1}';
         }
     }
 }
